@@ -15,7 +15,7 @@ class RollOfTheBones {
         this.refresh?.addEventListener('click', this.refreshRolls);
 
         this.btns.forEach((btn, index) => {
-            btn.addEventListener('click', (e) => this.letsRoll(e, index));
+            btn.addEventListener('click', (e): void => this.letsRoll(e, index));
         })
     }
 
